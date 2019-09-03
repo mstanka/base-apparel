@@ -1,1 +1,144 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ce9797;
+}
+
+.container {
+  margin: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container .logo {
+  padding: 2rem 1rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.container .image {
+  background: url("../images/hero-mobile.jpg") no-repeat center center/cover;
+  height: 300px;
+}
+
+.container .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/bg-pattern-desktop.svg") no-repeat center center/cover;
+}
+
+.container .text h1 {
+  font-size: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2rem;
+  line-height: 2.2rem;
+  padding: 2rem;
+}
+
+.container .text h1 span {
+  color: #000;
+}
+
+.container .text p {
+  line-height: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.container .text .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .text .form #email {
+  height: 100%;
+  padding: .8rem 2rem;
+  outline: none;
+  background: linear-gradient(135deg, white, #fff5f5);
+  border: #ce9797 solid 1px;
+  color: #ce9797;
+  border-radius: 1.5rem;
+}
+
+.container .text .form #email::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+.container .text .form #email:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.container .text .form #email::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.container .text .form #email::placeholder {
+  color: #ce9797;
+}
+
+.container .text .form #email:focus {
+  background-color: #d6a8a8;
+}
+
+.container .text .form #submit {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  padding: .8rem 1.8rem;
+  outline: none;
+  border-radius: 1.5rem;
+  border: #ce9797 solid 1px;
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+  cursor: pointer;
+}
+
+.container .text .form #submit img {
+  background-image: url("../images/icon-arrow.svg") no-repeat center center/cover;
+}
+
+.container .text .form #message {
+  color: red;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */

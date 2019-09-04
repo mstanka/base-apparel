@@ -11,21 +11,39 @@ body {
 }
 
 .container {
-  margin: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 25% 75%;
+  grid-template-areas: 
+    "logo image"
+    "text image";
+  background: url("../images/bg-pattern-desktop.svg") no-repeat center center/cover;
+    
+  @media screen and (max-width: 700px) {
+    grid-template-columns:  1fr;
+    grid-template-rows: 15% 40% 45%;
+    grid-template-areas: 
+    "logo"
+    "image"
+    "text";
+  }
 
   .logo {
-    padding: 2rem 1rem;
-    align-self: flex-start;
+    padding: 2rem 4rem;
+    grid-area: logo;
   }
 
   .image {
-    background: url("../images/hero-mobile.jpg") no-repeat center center/cover;
-    height: 300px;
+    background: url("../images/hero-desktop.jpg") no-repeat center center/cover;
+    grid-area: image;
+    height: 600px;
+
+    @media screen and (max-width: 700px) {
+      background: url("../images/hero-mobile.jpg") no-repeat center center/cover;
+      grid-area: image;
+      height: 300px;
+    }
   }
 
   .text {
@@ -33,31 +51,42 @@ body {
     flex-direction: column;
     justify-content: center;
     background-image: url("../images/bg-pattern-desktop.svg") no-repeat center center/cover;
+    grid-area: text;
+    padding: 2rem 4rem;
+
+    @media screen and (max-width: 700px) {
+      text-align: center;
+    }
 
     h1 {
       font-size: 700;
       text-transform: uppercase;
       letter-spacing: 1.2rem;
-      line-height: 2.2rem;
-      padding: 2rem;
-
+      line-height: 2.3rem;
+      padding-bottom: 2rem;
+      
       span {
         color: #000;
       }
+
+      @media screen and (max-width: 700px) {
+      padding: 2rem 0;
+    }
     }
 
     p {
-      line-height: 1.2rem;
+      line-height: 1.4rem;
       padding-bottom: 2rem;
     }
 
    .form {
      display: flex;
-     justify-content: center;
-     align-items: center;
-
+  
+    @media screen and (max-width: 700px) {
+      justify-content: center;
+    }
     #email {
-       height: 100%;
+       width: 90%;
        padding: .8rem 2rem;
        outline: none;
        background: $linear-gradient-light;
@@ -70,28 +99,28 @@ body {
       }
       &:focus {
         background-color: lighten($primary-color-light, 5%);
-      }
+      }       
     }
-    #submit {
+    
+    button {
        background: $linear-gradient-dark;
        padding: .8rem 1.8rem;
        outline: none;
        border-radius: 1.5rem;
        border: $primary-color-light solid 1px;
-       transform: translateX(-2rem);
+       transform: translateX(-2.2rem);
        cursor: pointer;
 
-      img {
-        background-image: url("../images/icon-arrow.svg") no-repeat center center/cover;
- 
+       img {
+         text-align: center;
+       }
+     
+      #message {
+        color: $primary-color-dark;
+        }
       }
-    }
-    #message {
-color: red;
-    }
+    }  
   }
-
- }  
 }
 
 .attribution { 

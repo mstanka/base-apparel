@@ -152,14 +152,10 @@ body {
   background-color: #d6a8a8;
 }
 
-.container .text .form #email #error-icon {
-  -webkit-transform: translateX(-7rem);
-          transform: translateX(-7rem);
-}
-
 .container .text .form #error-icon {
-  -webkit-transform: translateX(-2.2rem);
-          transform: translateX(-2.2rem);
+  -webkit-transform: translateX(-6rem);
+          transform: translateX(-6rem);
+  padding: 1rem 0;
 }
 
 .container .text .form button {
@@ -168,8 +164,8 @@ body {
   outline: none;
   border-radius: 1.5rem;
   border: #ce9797 solid 1px;
-  -webkit-transform: translateX(-2.2rem);
-          transform: translateX(-2.2rem);
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
   cursor: pointer;
 }
 

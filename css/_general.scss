@@ -94,20 +94,17 @@ body {
        color: $primary-color-light;
        border-radius: 1.5rem;
 
-      &::placeholder {
-        color: $primary-color-light;
-      }
-      &:focus {
-        background-color: lighten($primary-color-light, 5%);
-      } 
-        #error-icon {        
-          transform: translateX(-7rem);
-          // display: none;
-         }     
+        &::placeholder {
+          color: $primary-color-light;
+        }
+        &:focus {
+          background-color: lighten($primary-color-light, 5%);
+        } 
       }
 
       #error-icon {
-        transform: translateX(-2.2rem);
+        transform: translateX(-6rem);
+        padding: 1rem 0;
       }
 
       button {
@@ -116,7 +113,7 @@ body {
           outline: none;
           border-radius: 1.5rem;
           border: $primary-color-light solid 1px;
-          transform: translateX(-2.2rem);
+          transform: translateX(-5rem);
           cursor: pointer;
       
           .arrow-icon {

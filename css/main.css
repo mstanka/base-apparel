@@ -105,13 +105,13 @@ body {
 
 .container .text p {
   line-height: 1.4rem;
-  padding-bottom: 2rem;
 }
 
 .container .text .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 2rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -152,6 +152,16 @@ body {
   background-color: #d6a8a8;
 }
 
+.container .text .form #email #error-icon {
+  -webkit-transform: translateX(-7rem);
+          transform: translateX(-7rem);
+}
+
+.container .text .form #error-icon {
+  -webkit-transform: translateX(-2.2rem);
+          transform: translateX(-2.2rem);
+}
+
 .container .text .form button {
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   padding: .8rem 1.8rem;
@@ -163,12 +173,15 @@ body {
   cursor: pointer;
 }
 
-.container .text .form button img {
+.container .text .form button .arrow-icon {
   text-align: center;
 }
 
-.container .text .form button #message {
+.container .text #error-message {
+  padding: .5rem 2rem;
   color: #f96262;
+  text-align: left;
+  font-size: .8rem;
 }
 
 .attribution {

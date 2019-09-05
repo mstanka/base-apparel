@@ -71,21 +71,21 @@ body {
 
       @media screen and (max-width: 700px) {
       padding: 2rem 0;
-    }
+      }
     }
 
     p {
       line-height: 1.4rem;
-      padding-bottom: 2rem;
     }
 
    .form {
-     display: flex;
+      display: flex;
+      padding-top: 2rem;
   
-    @media screen and (max-width: 700px) {
-      justify-content: center;
-    }
-    #email {
+      @media screen and (max-width: 700px) {
+        justify-content: center;
+      }
+      #email {
        width: 90%;
        padding: .8rem 2rem;
        outline: none;
@@ -99,29 +99,41 @@ body {
       }
       &:focus {
         background-color: lighten($primary-color-light, 5%);
-      }       
+      } 
+        #error-icon {        
+          transform: translateX(-7rem);
+          // display: none;
+         }     
+      }
+
+      #error-icon {
+        transform: translateX(-2.2rem);
+      }
+
+      button {
+          background: $linear-gradient-dark;
+          padding: .8rem 1.8rem;
+          outline: none;
+          border-radius: 1.5rem;
+          border: $primary-color-light solid 1px;
+          transform: translateX(-2.2rem);
+          cursor: pointer;
+      
+          .arrow-icon {
+            text-align: center;
+          }
+        }
     }
     
-    button {
-       background: $linear-gradient-dark;
-       padding: .8rem 1.8rem;
-       outline: none;
-       border-radius: 1.5rem;
-       border: $primary-color-light solid 1px;
-       transform: translateX(-2.2rem);
-       cursor: pointer;
-
-       img {
-         text-align: center;
-       }
-     
-      #message {
-        color: $primary-color-dark;
-        }
-      }
-    }  
+    #error-message {
+      padding: .5rem 2rem;
+      color: $primary-color-dark;
+      text-align: left;
+      font-size: .8rem;
+    } 
   }
 }
+
 
 .attribution { 
   font-size: 11px; 

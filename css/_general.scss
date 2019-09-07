@@ -18,9 +18,10 @@ body {
   grid-template-areas: 
     "logo image"
     "text image";
-  background: url("../images/bg-pattern-desktop.svg") no-repeat center center/cover;
+  background: url("../images/bg-pattern-desktop.svg") no-repeat left bottom;
     
   @media screen and (max-width: 700px) {
+    margin: auto;
     grid-template-columns:  1fr;
     grid-template-rows: 15% 40% 45%;
     grid-template-areas: 
@@ -30,7 +31,7 @@ body {
   }
 
   .logo {
-    padding: 2rem 4rem;
+    padding: 2rem 7rem;
     grid-area: logo;
   }
 
@@ -50,9 +51,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("../images/bg-pattern-desktop.svg") no-repeat center center/cover;
     grid-area: text;
-    padding: 2rem 4rem;
+    padding: 2rem 7rem;
 
     @media screen and (max-width: 700px) {
       text-align: center;
@@ -81,13 +81,14 @@ body {
    .form {
       display: flex;
       padding-top: 2rem;
-  
+          
       @media screen and (max-width: 700px) {
-        justify-content: center;
+       margin: auto;
       }
       #email {
-       width: 90%;
+       width: 100%;
        padding: .8rem 2rem;
+       margin-right: -5rem;
        outline: none;
        background: $linear-gradient-light;
        border: $primary-color-light solid 1px;
@@ -99,11 +100,11 @@ body {
         }
         &:focus {
           background-color: lighten($primary-color-light, 5%);
-        } 
+        }     
       }
 
       #errorIcon {
-        transform: translateX(-6rem);
+        transform: translateX(-1rem);
         padding: 1rem 0;
         visibility: hidden;
       }
@@ -114,7 +115,6 @@ body {
           outline: none;
           border-radius: 1.5rem;
           border: $primary-color-light solid 1px;
-          transform: translateX(-5rem);
           cursor: pointer;
       
           .arrowIcon {
@@ -129,14 +129,18 @@ body {
       text-align: left;
       font-size: .8rem;
       visibility: hidden;
+
+      @media screen and (max-width: 700px) {
+       margin: auto;
+      }
     } 
   }
 }
 
-
 .attribution { 
   font-size: 11px; 
   text-align: center; 
+  padding-bottom: 1.5rem;
 
   a { 
     color: $link-color; 

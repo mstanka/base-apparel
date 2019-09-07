@@ -1,14 +1,14 @@
 let email = document.getElementById("email");
 let emailValue = "";
 let regEx = /\S+@\S+\.\S+/;
-let submit = document.getElementById("submit");
+// let form = document.getElementById("submitted");
 
-submit.addEventListener("click", submitEmail);
+// form.addEventListener("click", submitEmail);
 
-function submitEmail() {
-  if (validateEmail === true) 
-    document.querySelector("#submitted") = enabled;
-  }
+// function submitEmail() {
+//   if (validateEmail === true) 
+//   form.action = enabled;
+//   }
 
 function validateEmail() {
   if (email) {
@@ -17,6 +17,7 @@ function validateEmail() {
   if (regEx.test(emailValue) !== true) {
     document.querySelector("#errorMessage").style.visibility = "visible";
     document.querySelector("#errorIcon").style.visibility = "visible";
+    document.querySelector("#email").style.border = "red solid 1px";
   } else 
     return true;
 } 

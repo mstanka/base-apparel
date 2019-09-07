@@ -102,9 +102,10 @@ body {
         } 
       }
 
-      #error-icon {
+      #errorIcon {
         transform: translateX(-6rem);
         padding: 1rem 0;
+        visibility: hidden;
       }
 
       button {
@@ -116,17 +117,18 @@ body {
           transform: translateX(-5rem);
           cursor: pointer;
       
-          .arrow-icon {
+          .arrowIcon {
             text-align: center;
           }
         }
     }
     
-    #error-message {
+    #errorMessage {
       padding: .5rem 2rem;
       color: $primary-color-dark;
       text-align: left;
       font-size: .8rem;
+      visibility: hidden;
     } 
   }
 }
@@ -140,5 +142,36 @@ body {
     color: $link-color; 
   }
 }
+
+#successMessage {
+  padding: 5rem;
+  color: $primary-color-light;
+  text-align: center;
+  font-size: 3rem;
+} 
+
+#wrapper {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
+  #back {
+    background: $linear-gradient-dark;
+    padding: .3rem 3rem;
+    outline: none;
+    border-radius: .5rem;
+    border: $primary-color-light solid 1px;
+    cursor: pointer;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  }
+}
+
      
 

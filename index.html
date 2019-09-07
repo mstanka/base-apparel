@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/6dba2ff605.js"></script>
   <script src="js/main.js"></script>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
@@ -12,7 +13,6 @@
 
 <body>
   <div class="container">
-    
     <header class="logo grid-item-1">
       <img src="images/logo.svg" alt="Logo">
     </header>
@@ -26,21 +26,18 @@
       <p>Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
              
-      <form class="form">
-        <input type="email" id="email" placeholder="Email Address" required>
+      <form class="form" action="submitted.html">
+        <input type="email" id="email" placeholder="Email Address" value="">
 
-          <img src="images/icon-error.svg" alt="Error" id="error-icon">
+          <img src="images/icon-error.svg" alt="Error" id="errorIcon">
           
-          <button id="submit" onclick="myFunction()">
-            <img src="images/icon-arrow.svg" alt="Arrow" id="arrow-icon">
+          <button type="submit" id="submit" onclick="validateEmail()">
+            <img src="images/icon-arrow.svg" alt="Arrow" id="arrowIcon">
           </button>
- 
-      </form>
+       </form>
 
-      <p id="error-message">Please provide a valid email</p>
-           
-    </div>
-     
+      <p id="errorMessage">Please provide a valid email</p>
+    </div>     
   </div>
    
   <footer>
@@ -49,6 +46,5 @@
       Coded by <a href="https://github.com/mstanka">mstanka</a>.
     </p>
   </footer>
-
 </body>
 </html>

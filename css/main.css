@@ -152,10 +152,11 @@ body {
   background-color: #d6a8a8;
 }
 
-.container .text .form #error-icon {
+.container .text .form #errorIcon {
   -webkit-transform: translateX(-6rem);
           transform: translateX(-6rem);
   padding: 1rem 0;
+  visibility: hidden;
 }
 
 .container .text .form button {
@@ -169,15 +170,16 @@ body {
   cursor: pointer;
 }
 
-.container .text .form button .arrow-icon {
+.container .text .form button .arrowIcon {
   text-align: center;
 }
 
-.container .text #error-message {
+.container .text #errorMessage {
   padding: .5rem 2rem;
   color: #f96262;
   text-align: left;
   font-size: .8rem;
+  visibility: hidden;
 }
 
 .attribution {
@@ -187,5 +189,44 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+#successMessage {
+  padding: 5rem;
+  color: #ce9797;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#wrapper {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrapper #back {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  padding: .3rem 3rem;
+  outline: none;
+  border-radius: .5rem;
+  border: #ce9797 solid 1px;
+  cursor: pointer;
+}
+
+#wrapper #back a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */

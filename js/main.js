@@ -1,14 +1,15 @@
 let email = document.getElementById("email");
 let emailValue = "";
 let regEx = /\S+@\S+\.\S+/;
-// let form = document.getElementById("submitted");
+let form = document.getElementById("submitted");
+form.setAttribute = "disabled";
 
-// form.addEventListener("click", submitEmail);
+form.addEventListener("click", submitEmail);
 
-// function submitEmail() {
-//   if (validateEmail === true) 
-//   form.action = enabled;
-//   }
+function submitEmail() {
+  if (validateEmail === true) 
+  form.setAttribute = "enabled";
+  }
 
 function validateEmail() {
   if (email) {

@@ -42,7 +42,8 @@ body {
   .image {
     background: url("../images/hero-desktop.jpg") no-repeat center center/cover;
     grid-area: image;
-    height: 600px;
+    max-width: 100%;
+    height: 600px;   
 
     @media screen and (max-width: 700px) {
       background: url("../images/hero-mobile.jpg") no-repeat center center/cover;
@@ -64,7 +65,7 @@ body {
     }
 
     h1 {
-      font-size: 700;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1.2rem;
       line-height: 2.3rem;

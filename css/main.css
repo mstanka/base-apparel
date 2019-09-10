@@ -179,6 +179,10 @@ body {
   text-align: center;
 }
 
+.container .text .form button:hover {
+  background: #f96262;
+}
+
 .container .text #errorMessage {
   padding: .5rem 2rem;
   color: #f96262;

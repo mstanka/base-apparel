@@ -126,6 +126,9 @@ body {
           .arrowIcon {
             text-align: center;
           }
+          &:hover {
+           background: $primary-color-dark; 
+          }
         }
     }
     

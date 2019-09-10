@@ -15,7 +15,7 @@ function validateEmail() {
   if (email) {
     emailValue = email.value;
   }
-  if (regEx.test(emailValue) !== true) {
+  if (regEx.test(emailValue) !== true || emailValue === 0) {
     document.querySelector("#errorMessage").style.visibility = "visible";
     document.querySelector("#errorIcon").style.visibility = "visible";
     document.querySelector("#email").style.border = "red solid 1px";

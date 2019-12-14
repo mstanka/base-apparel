@@ -1,0 +1,59 @@
+.form-container {
+  display: flex;
+  padding-top: 2rem;
+      
+  @media screen and (max-width: 700px) {
+    margin: auto;
+  }
+  #email {
+    width: 100%;
+    padding: .8rem 2rem;
+    margin-right: -5rem;
+    outline: none;
+    background: $linear-gradient-light;
+    border: $primary-color-light solid 1px;
+    color: $primary-color-light;
+    border-radius: 1.5rem;
+
+    &::placeholder {
+      color: $primary-color-light;
+    }
+    &:focus {
+      background-color: lighten($primary-color-light, 5%);
+    }     
+  }
+
+  #errorIcon {
+    transform: translateX(-1rem);
+    padding: 1rem 0;
+    visibility: hidden;
+  }
+
+  button {
+    background: $linear-gradient-dark;
+    padding: .8rem 1.8rem;
+    outline: none;
+    border-radius: 1.5rem;
+    border: $primary-color-light solid 1px;
+    cursor: pointer;
+
+    .arrowIcon {
+      text-align: center;
+    }
+    &:hover {
+      background: $primary-color-dark; 
+    }
+  }
+}
+
+#errorMessage {
+  padding: .5rem 2rem;
+  color: $primary-color-dark;
+  text-align: left;
+  font-size: .8rem;
+  visibility: hidden;
+
+  @media screen and (max-width: 700px) {
+    margin: auto;
+  }
+} 

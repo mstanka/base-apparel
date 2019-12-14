@@ -1,0 +1,12 @@
+.header-container {
+  position: absolute;
+
+  .logo {
+    padding: 2rem 9rem;
+
+    @media screen and (max-width: 900px) {
+      padding: 2rem 9rem 2rem 2rem;
+    }
+  }
+}
+ 

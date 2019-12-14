@@ -7,36 +7,44 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/6dba2ff605.js"></script>
-  <script src="js/main.js"></script>
+ 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 
-<body>
-  <div class="container">
-    <header class="logo grid-item-1">
-      <img src="images/logo.svg" alt="Logo">
-    </header>
+<body>  
+  <header>
+    <div class="header-container">
+      <img src="images/logo.svg" alt="Logo" class="logo">
+    </div>    
+  </header>
 
-    <div class="image grid-item-2"></div>
+  <div class="main-container">
+    <div class="img-container">
+      <picture>
+        <source media="(min-width: 900px)" srcset="images/hero-desktop.jpg" />
+        <img class="main-img" src="images/hero-mobile.jpg" alt="picture of a women" />
+      </picture>
+    </div>
 
-    <div class="text grid-item-3">
+    <div class="text-container">
       <h1>We're</br>
         <span> coming </br>
           soon</span></h1>
       <p>Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
              
-      <form class="form" id="submitted" action="submitted.html" disabled>
-        <input type="email" id="email" placeholder="Email Address" value="">
-
+      <form id="form" method="post">
+        <div class="form-container">
+          <input type="email" name="email" aria-label="email to sign up" id="email" placeholder="Email Address" required>
+          
           <img src="images/icon-error.svg" alt="Error" id="errorIcon">
           
-          <button type="submit" id="submit" onclick="validateEmail()">
+          <button type="submit" id="submit">
             <img src="images/icon-arrow.svg" alt="Arrow" id="arrowIcon">
           </button>
-       </form>
-
-      <p id="errorMessage">Please provide a valid email</p>
+        </div>  
+        <p id="errorMessage">Please provide a valid email</p>
+       </form>      
     </div>     
   </div>
    
@@ -46,5 +54,7 @@
       Coded by <a href="https://github.com/mstanka">mstanka</a>.
     </p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
